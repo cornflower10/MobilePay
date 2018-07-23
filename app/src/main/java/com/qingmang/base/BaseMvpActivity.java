@@ -3,8 +3,6 @@ package com.qingmang.base;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.Loader;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,7 +19,7 @@ import butterknife.ButterKnife;
  * Created by xiejingbao on 2018/1/9.
  */
 
-public abstract class BaseMvpActivity<P extends Presenter<V>,V extends BaseView> extends BaseActivity implements BaseView, LoaderManager.LoaderCallbacks<P> {
+public abstract class BaseMvpActivity<P extends Presenter<V>,V extends BaseView> extends BaseActivity implements BaseView{
    public P presenter;
     private final int BASE_LODER_ID = 1000;//loader的id值
     public LoadViewHelper loadViewHelper;
@@ -29,12 +27,13 @@ public abstract class BaseMvpActivity<P extends Presenter<V>,V extends BaseView>
     public abstract String setTitleName();
     public abstract View getRootView();
     public abstract int setContentView();
+    protected abstract P initPresenter();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(setContentView());
         ButterKnife.bind(this);
-        getSupportLoaderManager().initLoader(BASE_LODER_ID,null,this);
+        presenter = initPresenter();
         LogManager.i("-----BaseMvpActivity-------");
         initToolar();
         if(null!=getRootView())
@@ -48,6 +47,7 @@ public abstract class BaseMvpActivity<P extends Presenter<V>,V extends BaseView>
         presenter.attachView((V)this);
 
     }
+
 
 
     @Override
@@ -89,25 +89,8 @@ public abstract class BaseMvpActivity<P extends Presenter<V>,V extends BaseView>
     @Override
     protected void onDestroy() {
         presenter.detachView();
+        presenter = null;
         super.onDestroy();
     }
 
-    @Override
-    public Loader onCreateLoader(int id, Bundle args) {
-        LogManager.i("-----onCreateLoader-------");
-        return null;
-    }
-
-    @Override
-    public void onLoadFinished(Loader<P> loader, P data) {
-        LogManager.i("-----onLoadFinished-------");
-        presenter = data;
-    }
-
-
-    @Override
-    public void onLoaderReset(Loader loader) {
-        LogManager.i("-----onLoaderReset-------");
-        presenter = null;
-    }
 }

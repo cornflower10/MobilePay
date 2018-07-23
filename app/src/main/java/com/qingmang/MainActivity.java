@@ -9,8 +9,6 @@ import android.widget.FrameLayout;
 import com.qingmang.home.FindFragment;
 import com.qingmang.home.HomeFragment;
 import com.qingmang.home.MyFragment;
-import com.qingmang.uilibrary.BottomBar;
-import com.qingmang.uilibrary.BottomBarTab;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(fl_container)
     FrameLayout flContainer;
-    @BindView(R.id.bottomBar)
-    BottomBar mBottomBar;
+//    @BindView(R.id.bottomBar)
+//    BottomBar mBottomBar;
     private List<Fragment> mFragments = new ArrayList<Fragment>();
     private HomeFragment homeFragment;
     private MyFragment myFragment;
@@ -37,84 +35,84 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         initFragment(savedInstanceState);
-        initView();
+//        initView();
     }
 
-
-    private void initView() {
-        mBottomBar = (BottomBar) findViewById(R.id.bottomBar);
-
-        mBottomBar.addItem(new BottomBarTab(this, R.mipmap.index))
-                .addItem(new BottomBarTab(this, R.mipmap.find))
-                .addItem(new BottomBarTab(this, R.mipmap.my));
-
-        mBottomBar.setOnTabSelectedListener(new BottomBar.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(int position, int prePosition) {
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-               switch (position){
-                   case 0:
-                       if(null==homeFragment){
-                           homeFragment = HomeFragment.newInstance();
-                           transaction.add(R.id.fl_container,homeFragment);
-                       }
-                           showHideFragment(homeFragment);
-                       break;
-                   case 1:
-                       if(null==findFragment){
-                           findFragment = FindFragment.newInstance();
-                           transaction.add(R.id.fl_container,findFragment);
-                       }
-                       showHideFragment(findFragment);
-                       break;
-                   case 2:
-                       if(null==myFragment){
-                           myFragment = MyFragment.newInstance();
-                           transaction.add(R.id.fl_container,myFragment);
-                       }
-                       showHideFragment(myFragment);
-                       break;
-
-               }
-                transaction.commit();
-
-            }
-
-            @Override
-            public void onTabUnselected(int position) {
-
-            }
-
-            @Override
-            public void onTabReselected(int position) {
-                final Fragment currentFragment = mFragments.get(position);
-//                int count = currentFragment.getChildFragmentManager().getBackStackEntryCount();
 //
-//                // 如果不在该类别Fragment的主页,则回到主页;
-//                if (count > 1) {
-//                    if (currentFragment instanceof ZhihuFirstFragment) {
-//                        currentFragment.popToChild(FirstHomeFragment.class, false);
-//                    } else if (currentFragment instanceof ZhihuSecondFragment) {
-//                        currentFragment.popToChild(ViewPagerFragment.class, false);
-//                    } else if (currentFragment instanceof ZhihuThirdFragment) {
-//                        currentFragment.popToChild(ShopFragment.class, false);
-//                    } else if (currentFragment instanceof ZhihuFourthFragment) {
-//                        currentFragment.popToChild(MeFragment.class, false);
-//                    }
-//                    return;
-//                }
-
-
-                // 这里推荐使用EventBus来实现 -> 解耦
-//                if (count == 1) {
-//                    // 在FirstPagerFragment中接收, 因为是嵌套的孙子Fragment 所以用EventBus比较方便
-//                    // 主要为了交互: 重选tab 如果列表不在顶部则移动到顶部,如果已经在顶部,则刷新
-//                    EventBus.getDefault().post(new TabSelectedEvent(position));
-//                }
-            }
-        });
-        mBottomBar.setCurrentItem(0);
-    }
+//    private void initView() {
+//        mBottomBar = (BottomBar) findViewById(R.id.bottomBar);
+//
+//        mBottomBar.addItem(new BottomBarTab(this, R.mipmap.index))
+//                .addItem(new BottomBarTab(this, R.mipmap.find))
+//                .addItem(new BottomBarTab(this, R.mipmap.my));
+//
+//        mBottomBar.setOnTabSelectedListener(new BottomBar.OnTabSelectedListener() {
+//            @Override
+//            public void onTabSelected(int position, int prePosition) {
+//                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+//               switch (position){
+//                   case 0:
+//                       if(null==homeFragment){
+//                           homeFragment = HomeFragment.newInstance();
+//                           transaction.add(R.id.fl_container,homeFragment);
+//                       }
+//                           showHideFragment(homeFragment);
+//                       break;
+//                   case 1:
+//                       if(null==findFragment){
+//                           findFragment = FindFragment.newInstance();
+//                           transaction.add(R.id.fl_container,findFragment);
+//                       }
+//                       showHideFragment(findFragment);
+//                       break;
+//                   case 2:
+//                       if(null==myFragment){
+//                           myFragment = MyFragment.newInstance();
+//                           transaction.add(R.id.fl_container,myFragment);
+//                       }
+//                       showHideFragment(myFragment);
+//                       break;
+//
+//               }
+//                transaction.commit();
+//
+//            }
+//
+//            @Override
+//            public void onTabUnselected(int position) {
+//
+//            }
+//
+//            @Override
+//            public void onTabReselected(int position) {
+//                final Fragment currentFragment = mFragments.get(position);
+////                int count = currentFragment.getChildFragmentManager().getBackStackEntryCount();
+////
+////                // 如果不在该类别Fragment的主页,则回到主页;
+////                if (count > 1) {
+////                    if (currentFragment instanceof ZhihuFirstFragment) {
+////                        currentFragment.popToChild(FirstHomeFragment.class, false);
+////                    } else if (currentFragment instanceof ZhihuSecondFragment) {
+////                        currentFragment.popToChild(ViewPagerFragment.class, false);
+////                    } else if (currentFragment instanceof ZhihuThirdFragment) {
+////                        currentFragment.popToChild(ShopFragment.class, false);
+////                    } else if (currentFragment instanceof ZhihuFourthFragment) {
+////                        currentFragment.popToChild(MeFragment.class, false);
+////                    }
+////                    return;
+////                }
+//
+//
+//                // 这里推荐使用EventBus来实现 -> 解耦
+////                if (count == 1) {
+////                    // 在FirstPagerFragment中接收, 因为是嵌套的孙子Fragment 所以用EventBus比较方便
+////                    // 主要为了交互: 重选tab 如果列表不在顶部则移动到顶部,如果已经在顶部,则刷新
+////                    EventBus.getDefault().post(new TabSelectedEvent(position));
+////                }
+//            }
+//        });
+//        mBottomBar.setCurrentItem(0);
+//    }
 
 
 

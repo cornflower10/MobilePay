@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="text_333333">#333333</color>
     <color name="white">#ffffff</color>
+    <color name="divide_line">#e7e7e7</color>
 </resources>
