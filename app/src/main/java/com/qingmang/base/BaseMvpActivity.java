@@ -27,6 +27,7 @@ public abstract class BaseMvpActivity<P extends Presenter<V>,V extends BaseView>
     public abstract String setTitleName();
     public abstract View getRootView();
     public abstract int setContentView();
+    public abstract void initViewAndData();
     protected abstract P initPresenter();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public abstract class BaseMvpActivity<P extends Presenter<V>,V extends BaseView>
         presenter = initPresenter();
         LogManager.i("-----BaseMvpActivity-------");
         initToolar();
+        initViewAndData();
         if(null!=getRootView())
             loadViewHelper = new LoadViewHelper(getRootView());
     }

@@ -29,4 +29,36 @@
         <item name="android:layout_height">0.5dp</item>
     </style>
 
+    <style name="white_20_center">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="black_333333_20_center">
+        <item name="android:textColor">@color/balck_333333</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="black_black_28_center">
+        <item name="android:textColor">@color/black_text_color</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="black_blue_21_center">
+        <item name="android:textColor">@color/main_blue</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="black_blue_30_center">
+        <item name="android:textColor">@color/main_blue</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <style name="black_blue_50_center">
+        <item name="android:textColor">@color/main_blue</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>

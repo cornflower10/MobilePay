@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="@color/dividing_line_color" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_7"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="7" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_4"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="4" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_1"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="1" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_0"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="0" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/dividing_line_color" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_8"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="8" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_5"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="5" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_2"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="2" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_dot"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="." />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/dividing_line_color" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+        <TextView
+            android:id="@+id/keyboard_bt_9"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="9" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_6"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="6" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+        <TextView
+            android:id="@+id/keyboard_bt_3"
+            style="@style/black_black_28_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="3" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+        <TextView
+            android:id="@+id/keyboard_bt_clean"
+            style="@style/black_blue_21_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/key_board_key_bg"
+            android:text="清空" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dividing_line_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/dividing_line_color" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_dddddd" />
+
+
+        <LinearLayout
+            android:id="@+id/keyboard_bt_del"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/key_board_key_bg"
+            android:gravity="center" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_delet" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_dddddd" />
+
+        <TextView
+            android:id="@+id/keyboard_bt_ok"
+            style="@style/white_20_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/blue_FF0C97FF"
+            android:text="确定" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_dddddd" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/key_board_key_ok_bg" />
+
+</LinearLayout>
+
+
+

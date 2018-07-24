@@ -6,4 +6,16 @@
     <color name="text_333333">#333333</color>
     <color name="white">#ffffff</color>
     <color name="divide_line">#e7e7e7</color>
+
+    <color name="blue_FF0C97FF">#FF0C97FF</color>
+    <!--键盘点击状态-->
+    <color name="key_board_press">#BFBFBFD9</color>
+    <color name="gray_dddddd">#dddddd</color>
+    <color name="balck_333333">#333333</color>
+    <!--白色底上的分割线颜色-->
+    <color name="dividing_line_color">#dcdcdc</color>
+    <!--所有黑色文字颜色-->
+    <color name="black_text_color">#1B1B1B</color>
+    <!--主色-蓝色-->
+    <color name="main_blue">#00B7EE</color>
 </resources>
