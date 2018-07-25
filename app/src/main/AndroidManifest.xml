@@ -18,8 +18,13 @@
         </activity>
         <activity android:name=".ConsumeActivity" />
         <activity android:name=".TransQueryActivity" />
-        <activity android:name=".MyActivity"></activity>
-        <activity android:name="scan.ScannerActivity"/>
+        <activity android:name=".MyActivity" />
+        <activity
+            android:name="scan.ScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RevokeActivity" />
+        <activity android:name=".RefundActivity" />
+        <activity android:name=".ReportActivity"></activity>
     </application>
 
 </manifest>

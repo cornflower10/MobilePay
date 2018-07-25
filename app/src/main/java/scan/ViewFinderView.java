@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
 
 import com.qingmang.R;
+import com.qingmang.baselibrary.utils.SizeUtils;
 
 import cn.szx.simplescanner.base.IViewFinder;
 
@@ -21,11 +22,11 @@ import cn.szx.simplescanner.base.IViewFinder;
  */
 public class ViewFinderView extends RelativeLayout implements IViewFinder {
     private Rect framingRect;//扫码框所占区域
-    private float widthRatio = 0.7f;//扫码框宽度占view总宽度的比例
-    private float heightWidthRatio = 0.6f;//扫码框的高宽比
+    private float widthRatio = 0.6f;//扫码框宽度占view总宽度的比例
+    private float heightWidthRatio = 1f;//扫码框的高宽比
     private int leftOffset = -1;//扫码框相对于左边的偏移量，若为负值，则扫码框会水平居中
-//    private int topOffset = (int) (150*getContext().getResources().getDisplayMetrics().density);//扫码框相对于顶部的偏移量，若为负值，则扫码框会竖直居中
-    private int topOffset = -1;
+    private int topOffset = (int) (150*getContext().getResources().getDisplayMetrics().density);//扫码框相对于顶部的偏移量，若为负值，则扫码框会竖直居中
+//    private int topOffset = -1;
 
     private boolean isLaserEnabled = true;//是否显示扫描线
     private static final int[] laserAlpha = {0, 64, 128, 192, 255, 192, 128, 64};
@@ -37,10 +38,14 @@ public class ViewFinderView extends RelativeLayout implements IViewFinder {
     private final int borderColor = Color.parseColor("#ffafed44");
     private final int borderStrokeWidth = 6;
     protected int borderLineLength = 100;
+    private String text = "放入框内，自动扫描";
+    private int textWidth;
+    private int textHigh;
 
     protected Paint laserPaint;
     protected Paint maskPaint;
     protected Paint borderPaint;
+    protected Paint textPaint;
 
     public ViewFinderView(Context context) {
         super(context);
@@ -67,6 +72,14 @@ public class ViewFinderView extends RelativeLayout implements IViewFinder {
         borderPaint.setStyle(Paint.Style.STROKE);
         borderPaint.setStrokeWidth(borderStrokeWidth);
         borderPaint.setAntiAlias(true);
+
+
+        textPaint = new Paint();
+        textPaint.setTextSize(SizeUtils.sp2px(12,context));
+        textPaint.setColor(ContextCompat.getColor(context,R.color.white));
+        textPaint.setAntiAlias(true);
+       textWidth = (int) textPaint.measureText(text);
+
     }
 
     private void initLayout() {
@@ -81,6 +94,7 @@ public class ViewFinderView extends RelativeLayout implements IViewFinder {
 
         drawViewFinderMask(canvas);
         drawViewFinderBorder(canvas);
+        canvas.drawText(text,(framingRect.right+framingRect.left-textWidth)/2,framingRect.bottom+SizeUtils.dp2px(40,getContext()),textPaint);
 
         if (isLaserEnabled) {
             drawLaser(canvas);

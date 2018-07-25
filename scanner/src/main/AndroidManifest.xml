@@ -1,3 +1,4 @@
-<manifest package="cn.szx.simplescanner">
-
+<manifest package="cn.szx.simplescanner"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CAMERA" />
 </manifest>

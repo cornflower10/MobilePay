@@ -16,19 +16,6 @@ import retrofit2.http.POST;
 public interface ApiService {
 
     /**
-     * 注册
-     * @param userName
-     * @param type
-     * @param sign
-     * @return
-     */
-    @FormUrlEncoded
-    @POST("regist.php")
-    Observable<BaseEntity> getSms(@Field("mobile") String userName,
-                                 @Field("mobileCodeType") String type,
-                                 @Field("sign") String sign);
-
-    /**
      * 登录
      * @param userName
      * @param passWd
@@ -39,24 +26,17 @@ public interface ApiService {
     Observable<BaseEntity<LoginEntity>> login(@Field("phone") String userName,
                                               @Field("password") String passWd
                                               );
-//
-//
-//
-//    @FormUrlEncoded
-//    @POST("agency/shuanglu/changePassword")
-//    Observable<ChangePasswdEntity> changePasswd(@Field("oldPassword") String userName,
-//                                                @Field("newPassword") String passWd,
-//                                                @Field("sign") String sign
-//    );
-//
-//    //上传同时
-//    @Multipart
-//    @POST("agency/shuanglu/submitIntentAgencyInfo")
-//    Observable<UploadEntity> uploads(@PartMap Map<String, RequestBody> params
-//    );
-//
-//    @FormUrlEncoded
-//    @POST("agency/shuanglu/isAgencyNameUsed")
-//    Observable<AgencyNameUsed> isAgencyNameUsed(@Field("customName") String customName,
-//                                                @Field("sign") String sign);
+
+    /**
+     * 消费
+     * @param
+     * @param
+     * @return
+     */
+    @FormUrlEncoded
+    @POST("regist.php")
+    Observable<String> consume(@Field("merchantId") String merchantId,
+                               @Field("payCode") String payCode,
+                               @Field("transAmt") double transAmt);
+
 }

@@ -12,6 +12,7 @@ import com.qingmang.view.NumberKeyMainBoard;
 import java.text.DecimalFormat;
 
 import butterknife.BindView;
+import scan.ScannerActivity;
 
 public class ConsumeActivity extends BaseMvpActivity<CommonPresenter,CommonView> implements CommonView {
     private String payMomey;
@@ -89,7 +90,7 @@ public class ConsumeActivity extends BaseMvpActivity<CommonPresenter,CommonView>
 
             @Override
             public void OK() {
-                //TODO 去扫码页面
+                startActivity(ScannerActivity.class);
             }
         });
     }

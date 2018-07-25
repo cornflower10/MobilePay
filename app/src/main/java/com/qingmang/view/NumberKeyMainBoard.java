@@ -240,9 +240,10 @@ public class NumberKeyMainBoard extends LinearLayout {
 //            }
 //        });
 
-        findViewById(R.id.keyboard_bt_dot).setOnClickListener(new OnClickListener() {
+        findViewById(R.id.keyboard_bt_ok).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                kBL.OK();
             }
         });
 

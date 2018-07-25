@@ -41,6 +41,7 @@ public class ScannerActivity extends AppCompatActivity implements ZBarScannerVie
         //zBarScannerView.setShouldAdjustFocusArea(true);//自动调整对焦区域
 
         container.addView(zBarScannerView);
+
     }
 
     @Override
@@ -74,4 +75,6 @@ public class ScannerActivity extends AppCompatActivity implements ZBarScannerVie
             }
         }, 2000);
     }
+
+
 }
