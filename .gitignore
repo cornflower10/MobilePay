@@ -4,8 +4,6 @@
 /.idea
 .DS_Store
 /build
-/baselibrary/build
-/network/build
-/uilibrary/build
+/*/build
 /citypickerview/build
 .gradle
