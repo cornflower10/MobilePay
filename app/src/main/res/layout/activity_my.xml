@@ -35,6 +35,11 @@
         android:text="关于"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <View
+        style="@style/divide_line_match"/>
+    <View
+        android:layout_marginTop="@dimen/margin_16"
+        style="@style/divide_line_match"/>
     <TextView
         android:gravity="center"
         android:background="@color/white"
@@ -42,4 +47,6 @@
         android:text="退出"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <View
+        style="@style/divide_line_match"/>
 </LinearLayout>

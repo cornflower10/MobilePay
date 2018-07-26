@@ -8,6 +8,7 @@
     <color name="divide_line">#e7e7e7</color>
 
     <color name="blue_FF0C97FF">#FF0C97FF</color>
+    <color name="blue_un_enable">#800C97FF</color>
     <!--键盘点击状态-->
     <color name="key_board_press">#BFBFBFD9</color>
     <color name="gray_dddddd">#dddddd</color>
