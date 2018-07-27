@@ -19,4 +19,9 @@
     <color name="black_text_color">#1B1B1B</color>
     <!--主色-蓝色-->
     <color name="main_blue">#00B7EE</color>
+    <color name="text_color_gray">#666666</color>
+    <color name="text_color_gray_99">#999999</color>
+    <color name="text_color">#323232</color>
+    <color name="text_color_gray_a9">#a9a9a9</color>
+    <color name="half_tran">#4D000000</color>
 </resources>

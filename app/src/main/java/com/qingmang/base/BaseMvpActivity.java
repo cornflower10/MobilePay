@@ -64,7 +64,7 @@ public abstract class BaseMvpActivity<P extends Presenter<V>,V extends BaseView>
             setSupportActionBar(toolbar);
             getSupportActionBar().setTitle("");
             if(showBack){
-//                toolbar.setNavigationIcon(R.drawable.icon_back);
+                toolbar.setNavigationIcon(R.drawable.icon_left);
                 getSupportActionBar().setDisplayShowHomeEnabled(true);
             }
             TextView textView = (TextView) findViewById(R.id.title_name);
