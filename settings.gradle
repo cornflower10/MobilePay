@@ -1,1 +1,1 @@
-include ':app', ':network', ':baselibrary', ':uilibrary', ':scanner'
+include ':app', ':network', ':baselibrary', ':uilibrary', ':scanner','pickerview','wheelview'

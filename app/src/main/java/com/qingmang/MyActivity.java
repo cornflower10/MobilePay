@@ -1,6 +1,5 @@
 package com.qingmang;
 
-import android.os.Bundle;
 import android.view.View;
 
 import com.qingmang.base.BaseMvpActivity;
@@ -34,11 +33,6 @@ public class MyActivity extends BaseMvpActivity<CommonPresenter,CommonView> impl
         return new CommonPresenter();
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
-    }
 
     @Override
     public void onDataSuccess(Object o) {

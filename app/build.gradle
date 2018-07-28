@@ -72,6 +72,7 @@ dependencies {
     compile rootProject.ext.dependencies.support_v4
     compile 'pub.devrel:easypermissions:1.0.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.alibaba:fastjson:1.2.29'
     compile 'com.jakewharton:butterknife:8.5.1'
     compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
     //防抖
@@ -83,4 +84,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     apt 'com.jakewharton:butterknife-compiler:8.5.1'
     compile project(':scanner')
+    compile project(':pickerview')
 }

@@ -27,7 +27,7 @@
             android:layout_height="wrap_content" />
     </RelativeLayout>
     <View
-        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginTop="10dp"
         style="@style/divide_line_match"/>
     <TextView
         android:background="@color/white"
