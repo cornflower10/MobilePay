@@ -87,6 +87,7 @@ public class TransQueryActivity extends BaseActivity {
         initTimePicker();
     }
 
+
     @OnClick({R.id.tv_start, R.id.tv_end_date, R.id.tv_type})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -101,6 +102,19 @@ public class TransQueryActivity extends BaseActivity {
                 break;
         }
     }
+
+
+//
+//    private void initDatePicker() {
+//        DatePicker  datePicker = new DatePicker(this);
+//        datePicker.setRange(1900, 2100);
+//        datePicker.setOnDatePickListener(new DatePicker.OnYearMonthDayPickListener() {
+//            @Override
+//            public void onDatePicked(String year, String month, String day) {
+//                tvIdDate.setText(year + "-" + month + "-" + day);
+//            }
+//        });
+//    }
 
 
     private TimePickerView timePickerView;
