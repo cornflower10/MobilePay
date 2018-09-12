@@ -10,8 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.qlzgzg.nettrade.android.R;
-import com.ztzgzg.baselibrary.SizeUtils;
+import com.qingmang.baselibrary.R;
+import com.qingmang.baselibrary.utils.SizeUtils;
+
 
 public abstract class ConfirmPopup<V extends View> extends BottomPopup<View> implements View.OnClickListener {
     private static final String TAG_SUBMIT = "submit";

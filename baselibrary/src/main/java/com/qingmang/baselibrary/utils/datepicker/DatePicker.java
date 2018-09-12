@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.ztzgzg.baselibrary.DateUtil;
+import com.qingmang.baselibrary.utils.DateUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;

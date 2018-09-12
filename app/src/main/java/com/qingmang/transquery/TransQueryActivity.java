@@ -1,4 +1,4 @@
-package com.qingmang;
+package com.qingmang.transquery;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -19,6 +19,7 @@ import com.bigkoo.pickerview.listener.OnTimeSelectChangeListener;
 import com.bigkoo.pickerview.listener.OnTimeSelectListener;
 import com.bigkoo.pickerview.view.TimePickerView;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.qingmang.R;
 import com.qingmang.adapter.QueryTypeAdapter;
 import com.qingmang.base.BaseActivity;
 import com.qingmang.baselibrary.utils.ReadAssets;

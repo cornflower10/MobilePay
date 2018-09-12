@@ -7,5 +7,9 @@
     android:orientation="vertical"
     tools:context=".ReportActivity">
     <include layout="@layout/toolbar"/>
-
+    <com.qingmang.view.IncomeBarChart
+        android:layout_gravity="center"
+        android:id="@+id/ibBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
 </LinearLayout>

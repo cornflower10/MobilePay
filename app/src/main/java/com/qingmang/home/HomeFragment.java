@@ -12,7 +12,7 @@ import com.qingmang.R;
 import com.qingmang.RefundActivity;
 import com.qingmang.ReportActivity;
 import com.qingmang.RevokeActivity;
-import com.qingmang.TransQueryActivity;
+import com.qingmang.transquery.TransQueryActivity;
 import com.qingmang.adapter.CheckBoxAdapter;
 import com.qingmang.base.BaseMvpFragment;
 import com.qingmang.base.CommonPresenter;
@@ -35,7 +35,7 @@ public class HomeFragment extends BaseMvpFragment<CommonPresenter, CommonView> i
     BannerLayout homeBanner;
     @BindView(R.id.rv)
     RecyclerView rv;
-    private static final String[] name = {"消费", "撤销", "退款", "交易查询", "报表统计"};
+    private static final String[] name = {"收款", "撤销", "退款", "交易查询", "报表统计"};
     private static final int[] icon = {R.drawable.icon_consume,
             R.drawable.icon_revoke, R.drawable.icon_refund, R.drawable.icon_query, R.drawable.icon_report};
     private List<Item> list =new ArrayList<>();

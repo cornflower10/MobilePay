@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qingmang.transquery.TransQueryInfoActivity">
+    <include layout="@layout/toolbar"
+       />
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="类型"
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="收款"
+            android:id="@+id/tv_type_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="方式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/wei_chat"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color"
+            android:id="@+id/iv_type"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="交易单号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="7463563965934"
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="交易时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="2018-09-12 10:28:59"
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="金额"
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="0.00"
+            android:id="@+id/tv_money_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text="备注"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_color"
+            android:text=""
+            android:id="@+id/tv_bz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

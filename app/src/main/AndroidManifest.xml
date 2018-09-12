@@ -19,7 +19,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".ConsumeActivity" />
-        <activity android:name=".TransQueryActivity" />
+        <activity android:name=".transquery.TransQueryActivity" />
         <activity android:name=".MyActivity" />
         <activity
             android:name="scan.ScannerActivity"
@@ -34,7 +34,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TransInfoActivity"></activity>
+        <activity android:name=".TransInfoActivity" />
+        <activity android:name=".transquery.TransQueryInfoActivity" />
     </application>
 
 </manifest>

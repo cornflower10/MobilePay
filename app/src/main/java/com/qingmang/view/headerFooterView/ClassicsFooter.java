@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.qlzgzg.nettrade.android.R;
+import com.qingmang.R;
 import com.scwang.smartrefresh.layout.api.RefreshFooter;
 import com.scwang.smartrefresh.layout.api.RefreshKernel;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
@@ -58,6 +58,7 @@ public  class ClassicsFooter extends LinearLayout implements RefreshFooter {
         setMinimumHeight(DensityUtil.dp2px(60));
 
     }
+    @Override
     @NonNull
     public View getView() {
         return this;//真实的视图就是自己，不能返回null

@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.LinearLayout;
 
-import com.qlzgzg.nettrade.android.R;
+import com.qingmang.baselibrary.R;
 
 
 public class Popup {
